@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3D旋转</title>
+<style type="text/css">
+		@font-face {
+			font-family: digit;
+			src: url("digital-7_mono.ttf"/*tpa=./digital-7_mono.ttf*/) format("truetype");
+		}
+		#elapseClock {
+			margin-top: 600px;
+		}
+</style>
+	<link href="css/default.css" tppabs="./css/default.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="js/jquery.js" tppabs="./js/jquery.js"></script>
+	<script type="text/javascript" src="js/garden.js" tppabs="./js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js" tppabs="./js/functions.js"></script>
+</head>
+<body>
+<div id="trans3DDemo1">
+	<div id="trans3DBoxes1">
+		<div class="a1"></div>
+		<div class="a2"></div>
+		<div class="a3"></div>
+		<div class="a4"></div>
+		<div class="a5"></div>
+		<div class="a6"></div>
+	</div>
+</div>
+<p style="margin-top: 190px;  font-size: 18px; text-align: center;">明洋你知道吗，我们已经相识：</p>
+<div id="elapseClock"></div>
+
+</body>
+
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src='js/TweenMax.min.js'></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script>
+	var together = new Date();
+		together.setFullYear(2019, 02, 09);
+		together.setHours(11);
+		together.setMinutes(30);
+		together.setSeconds(0);
+		together.setMilliseconds(0);
+		timeElapse(together);
+			setInterval(function () {
+				timeElapse(together);
+			}, 500);
+
+			adjustCodePosition();
+			$("#code").typewriter();
+</script>
+
+
+</html>
